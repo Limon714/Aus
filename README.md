@@ -7,6 +7,8 @@
 ## Forget Password
 ![Screenshot_12](https://github.com/Limon714/inventory-management/assets/72975868/7ebdebce-3d3f-4b3b-85ae-65d276abcedc)
 
+## User Dashboard
+![screencapture-127-0-0-1-8000-dashboard-2024-01-04-19_27_20](https://github.com/Limon714/inventory-management/assets/72975868/723dd594-eca1-4a9e-97dd-8ba379d9e58f)
 
 ## Front End
 ![screencapture-127-0-0-1-8000-2024-01-04-19_14_14](https://github.com/Limon714/inventory-management/assets/72975868/75b6591d-a1bc-41cc-a355-0fafbaa2c7f4)
