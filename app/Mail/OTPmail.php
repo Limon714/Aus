@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class OTPmail extends Mailable
+class OTPMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -17,6 +17,7 @@ class OTPmail extends Mailable
      * Create a new message instance.
      */
     public $otp;
+
     public function __construct($otp)
     {
         $this->otp=$otp;
@@ -28,7 +29,7 @@ class OTPmail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'O T Pmail',
+            subject: 'O T P Mail',
         );
     }
 
@@ -38,7 +39,7 @@ class OTPmail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'email.OTPmail',
+            view: 'email.OTPMail',
         );
     }
 

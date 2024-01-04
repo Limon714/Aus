@@ -29,7 +29,7 @@ return [
     | mailers below. You are free to add additional mailers as required.
     |
     | Supported: "smtp", "sendmail", "mailgun", "ses", "ses-v2",
-    |            "postmark", "log", "array", "failover", "roundrobin"
+    |            "postmark", "log", "array", "failover"
     |
     */
 
@@ -50,16 +50,15 @@ return [
             'transport' => 'ses',
         ],
 
-        'postmark' => [
-            'transport' => 'postmark',
-            // 'message_stream_id' => null,
+        'mailgun' => [
+            'transport' => 'mailgun',
             // 'client' => [
             //     'timeout' => 5,
             // ],
         ],
 
-        'mailgun' => [
-            'transport' => 'mailgun',
+        'postmark' => [
+            'transport' => 'postmark',
             // 'client' => [
             //     'timeout' => 5,
             // ],
@@ -86,14 +85,6 @@ return [
                 'log',
             ],
         ],
-
-        'roundrobin' => [
-            'transport' => 'roundrobin',
-            'mailers' => [
-                'ses',
-                'postmark',
-            ],
-        ],
     ],
 
     /*
@@ -118,7 +109,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | If you are using Markdown based email rendering, you may configure your
-    | theme and component paths here, allowing you to customize the design
+    | theme and components paths here, allowing you to customize the design
     | of the emails. Or, you may simply stick with the Laravel defaults!
     |
     */
